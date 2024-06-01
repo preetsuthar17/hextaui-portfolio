@@ -5,6 +5,7 @@
 :root {
   --text-color: #ffffff;
   --bg-color: #000000;
+  color-scheme: dark;
 }
 
 * {
@@ -15,6 +16,7 @@
 
 body,
 html {
+  scrollbar-gutter: unset;
   font-family: var(--inter-fonts);
   color: var(--text-color);
   background-color: var(--bg-color);
@@ -22,4 +24,20 @@ html {
   scroll-behavior: smooth !important;
   --webkit-scroll-behavior: smooth !important;
   --webkit-font-smoothing: antialiased;
+}
+
+h2 {
+  position: relative;
+  width: fit-content;
+  &::before {
+    content: "";
+    position: absolute;
+    height: 0.2px;
+    width: 100rem;
+    background-color: white;
+    left: 110%;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0.3;
+  }
 }
