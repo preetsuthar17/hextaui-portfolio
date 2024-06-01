@@ -3,6 +3,23 @@
 @tailwind utilities;
 
 :root {
-  --text-color: #fffff;
+  --text-color: #ffffff;
   --bg-color: #000000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  font-family: var(--inter-fonts);
+  color: var(--text-color);
+  background-color: var(--bg-color);
+  overflow-x: hidden;
+  scroll-behavior: smooth !important;
+  --webkit-scroll-behavior: smooth !important;
+  --webkit-font-smoothing: antialiased;
 }
