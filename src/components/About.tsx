@@ -18,7 +18,7 @@ const About = () => {
             aspernatur atque voluptatem excepturi minus, optio facere
             consequatur. Provident, consequatur repudiandae.
           </p>
-          <div className="max-w-[35rem] mr-auto">
+          <div className="max-w-[35rem] max-sm:max-w-[20rem] max-sm:mx-auto max-[354px]:max-w-[10rem] mr-auto">
             <LangScroller />
           </div>
         </div>
